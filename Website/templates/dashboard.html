@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ByteCode</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='logo_small.png') }}" type="image/png">
+</head>
+<body>
+
+<!-- Collapsible Sidebar Navigation -->
+<nav class="navbar sidebar-nav collapsed" id="sidebar">
+    <a class="navbar-brand d-flex align-items-center justify-content-center mb-4 toggle-sidebar" id="toggleBtn">
+        <img src="{{ url_for('static', filename='logo1.png') }}" alt="ByteCode Logo" class="nav-logo">
+    </a>
+    <ul class="navbar-nav flex-column nav-items">
+        <li class="nav-item">
+            <a class="nav-link" href="#home"><i class="fas fa-home"></i> <span class="nav-label">Home</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#about"><i class="fas fa-info-circle"></i> <span class="nav-label">About Us</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="https://www.kaggle.com/datasets/anshtanwar/current-daily-price-of-various-commodities-india" target="_blank"><i class="fas fa-database"></i> <span class="nav-label">Dataset</span></a>
+        </li>
+    </ul>
+
+    <ul class="navbar-nav flex-column nav-items-bottom mt-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#login"><i class="fas fa-sign-in-alt"></i> <span class="nav-label">Login</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#logout"><i class="fas fa-sign-out-alt"></i> <span class="nav-label">Logout</span></a>
+        </li>
+    </ul>
+</nav>
+
+<!-- Main Content (Unchanged) -->
+<div class="container-fluid p-2 text-center d-flex flex-column justify-content-center align-items-center">
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="ByteCode Logo" class="logo mb-4">
+    <h1 class="mb-4">Flipkart Grid 6.0</h1>
+    <p class="mb-5 px-lg-5">
+        Flipkart Grid 6.0 is a national-level competition inviting undergraduate students to design a smart quality test system using camera vision technology. Participants will tackle real-world challenges in shipment quality and quantity assessment, with the chance to win cash prizes and internships. The competition offers networking opportunities and a platform to showcase technical skills to industry leaders. Key judging criteria include innovation, feasibility, and impact.
+    </p>
+
+    <div class="d-flex justify-content-center mb-5">
+        <!-- Existing Card Components (kept as is) -->
+        <!-- First Card (Analyze) -->
+        <div class="card">
+            <div class="image image1"></div>
+            <div class="content">
+                <a href="dashboard.html"> <!-- Updated Link -->
+                    <span class="title">
+                        OCR to extract 
+                        details from 
+                        image/label 
+                    </span>
+                </a>
+                <p class="desc">Dive into historical trends, discover data insights, and make informed decisions based on past market behavior.</p>
+                <a class="action" href="dashboard.html"> <!-- Updated Link -->
+                    <button class="gbtn">
+                        Extract data
+                        <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                          <path
+                            clip-rule="evenodd"
+                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Second Card (Predict) -->
+        <div class="card">
+            <div class="image image2"></div>
+            <div class="content">
+                <a href="dashboard.html"> <!-- Updated Link -->
+                    <span class="title">
+                        OCR to get expiry date details
+                    </span>
+                </a>
+                <p class="desc">Dive into historical trends, discover data insights, and make informed decisions based on past market behavior.</p>
+                <a class="action" href="dashboard.html"> <!-- Updated Link -->
+                    <button class="gbtn">
+                      Extract Mfg & Exp date
+                      <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                        <path
+                          clip-rule="evenodd"
+                          d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                          fill-rule="evenodd"
+                        ></path>
+                      </svg>
+                    </button>
+                </a>
+            </div>
+        </div>
+
+        <!-- Third Card (Detecting freshness) -->
+        <div class="card">
+            <div class="image image3"></div>
+            <div class="content">
+                <a href="dashboard.html"> <!-- Updated Link -->
+                    <span class="title">
+                        Image recognition and IR based counting
+                    </span>
+                </a>
+                <p class="desc">Dive into historical trends, discover data insights, and make informed decisions based on past market behavior.</p>
+                <a class="action" href="dashboard.html"> <!-- Updated Link -->
+                    <button class="gbtn">
+                        IR based Count
+                        <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                          <path
+                            clip-rule="evenodd"
+                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </button>
+                </a>
+            </div>
+        </div>
+
+
+        <!-- Fourth Card (Detecting freshness) -->
+        <div class="card">
+            <div class="image image3"></div>
+            <div class="content">
+                <a href="dashboard.html"> <!-- Updated Link -->
+                    <span class="title">
+                        Detecting freshness of fresh produce
+                    </span>
+                </a>
+                <p class="desc">Dive into historical trends, discover data insights, and make informed decisions based on past market behavior.</p>
+                <a class="action" href="dashboard.html"> <!-- Updated Link -->
+                    <button class="gbtn">
+                        Detecting freshness
+                        <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+                          <path
+                            clip-rule="evenodd"
+                            d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                            fill-rule="evenodd"
+                          ></path>
+                        </svg>
+                      </button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- About Us Section -->
+<section id="about" class="about-us-section py-5 text-center">
+    <div class="container">
+        <h2>About Us</h2>
+        <p class="mb-5 px-lg-5">At ByteCode, we harness data to empower the Indian agricultural sector. Our platform uses cutting-edge machine learning algorithms to predict future trends and provide insightful analytics, helping farmers and stakeholders make informed decisions.</p>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer-section py-4">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4">
+                <h5>Product</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">OCR to extract 
+                        details from image </a></li>
+                    <li><a href="#"></a>OCR to get expiry date </li>
+                    <li><a href="#">IR based counting </a></li>
+                    <li><a href="#">Detecting freshness </a></li>
+
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Company</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h5>Follow Us</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <p class="mt-4">&copy; 2024 Gourab. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    const toggleBtn = document.getElementById('toggleBtn');
+    const sidebar = document.getElementById('sidebar');
+    
+    toggleBtn.addEventListener('click', () => {
+        sidebar.classList.toggle('collapsed');
+    });
+</script>
+</body>
+</html>
