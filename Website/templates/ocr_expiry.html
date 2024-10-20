@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCR to Get Expiry Date</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <h1>Gourab Choudhury</h1>
+        </div>
+        <div class="nav-right">
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
+
+    <main class="camera-main">
+        <h2>OCR to Get Expiry Date</h2>
+        <div class="camera-container">
+            <div class="buttons-container">
+                <button onclick="openCamera()">Open Camera</button>
+                <button onclick="triggerImageUpload()">Upload Image</button>
+                <input type="file" id="imageUpload" accept="image/*" style="display: none;" onchange="handleImageUpload(event)">
+            </div>
+            <div id="cameraFeed"></div> <!-- Placeholder for video or image -->
+            <br>
+            <button id="predictButton" onclick="predictResult()">Predict</button>
+            <div id="result"></div> <!-- Placeholder for prediction result -->
+            <p>This feature allows you to detect the freshness of items. You can customize this section later with your own information.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Gourab. All rights reserved.</p>
+    </footer>
+</body>
+</html>

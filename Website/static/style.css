@@ -93,19 +93,22 @@ p {
 
 /* Specific images for each card */
 .image1 {
-    background-image: url('analyze.png'); /* Replace with your first image path */
+    background-image: url('OCR.png'); /* Replace with your first image path */
 }
 
 .image2 {
-    background-image: url('Price_predection.png'); /* Replace with your second image path */
+    background-image: url('Expire.png'); /* Replace with your second image path */
 }
 
 .image3 {
-    background-image: url('Future_crop.png'); /* Replace with your third image path */
+    background-image: url('IR.png'); /* Replace with your third image path */
 }
 
+.image4 {
+    background-image: url('freshfruit.png'); /* Replace with your 4th image path */
+}
 .title {
-    color: #111827;
+    color: #080b12;
     font-size: 1.125rem; 
     line-height: 1.75rem;
     font-weight: 600;
@@ -158,7 +161,7 @@ p {
 /* Navigation Bar Styles */
 /* Sidebar styles */
 .sidebar-nav {
-    background-color: #2c1515;
+    background-color: #b7b735;
     border-right: 1px solid #eee;
     width: 80px; /* Collapsed width */
     height: 100vh;
@@ -226,7 +229,7 @@ p {
 }
 
 .sidebar-nav .nav-link:hover {
-    color: #f25100;
+    color: #d3f625;
     background-color: #f4f4f4;
     border-radius: 8px;
 }
@@ -301,12 +304,12 @@ p {
 
 /* Main Logo */
 .logo {
-    width: 150px;
+    width: 800px;
 }
 
 /* Button Hover Effect */
 button:hover {
-    background-color: #ff5722;
+    background-color: #c2cd2a;
 }
 
 
